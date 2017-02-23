@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="yunke_RoundImageView">
+        <attr name="yunke_borderRadius" format="dimension" />
+        <attr name="yunke_type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="yunke_CircleImageView">
+        <attr name="yunke_border_width" format="dimension" />
+        <attr name="yunke_border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="yunke_PlayerProgressBar">
+        <attr name="yunke_Player_Teacher_Point_Background" format="color" />
+        <attr name="yunke_Player_Student_Point_Background" format="color" />
+        <attr name="yunke_Player_Point_Width" format="dimension" />
+        <attr name="yunke_Player_Point_Height" format="dimension" />
+    </declare-styleable>
+
+</resources>

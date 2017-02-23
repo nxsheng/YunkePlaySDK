@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yunke_rect_bg_toast">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="17dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yunke_tip_success_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/yunke_text_size_15_white"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/iv_icon"
+            android:layout_centerHorizontal="true"
+            android:text="tip_content" />
+    </RelativeLayout>
+
+</FrameLayout>

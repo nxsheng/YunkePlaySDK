@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yunke_rect_bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/title"
+            style="@style/yunke_text_size_16_default"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="title"
+            android:visibility="visible" />
+
+        <!-- message -->
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/yunke_text_size_16_default"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="message"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/yunke_text_size_16_default"
+                android:layout_width="match_parent"
+                android:maxLines="10"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="false"
+                android:text="message" />
+        </LinearLayout>
+
+        <!-- confirm -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F3F5F7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/positive"
+                style="@style/yunke_text_size_16_default"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/yunke_rounded_rectangle_grey"
+                android:gravity="center"
+                android:text="positive"
+                android:textColor="#666666"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/negative"
+                style="@style/yunke_text_size_16_default"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/yunke_rounded_rectangle_blue"
+                android:gravity="center"
+                android:text="negative"
+                android:textColor="#FFFFFF"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

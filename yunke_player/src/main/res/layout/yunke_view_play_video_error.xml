@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_play_video_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#083d32"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_play_video_error_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/yunke_play_video_status_no_find_course" />
+
+        <TextView
+            android:id="@+id/tv_play_video_error_status"
+            style="@style/yunke_text_size_14_white"
+            android:layout_centerInParent="true"
+            android:text="@string/yunke_play_video_status_no_find_course" />
+    </LinearLayout>
+</RelativeLayout>

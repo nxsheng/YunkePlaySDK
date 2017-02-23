@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <!--android:layout_marginTop="20dp"-->
+    <LinearLayout
+        android:id="@+id/ll_speak_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yunke_speak_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/yunke_text_size_17_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/yunke_speak_dialog_speaking"
+            android:textColor="#7F3023"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="10dp"
+            android:background="#F8BA25" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            style="@style/yunke_text_size_13_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="为了避免噪音，请使用耳机上的麦克风"
+            android:textColor="#893E09" />
+
+        <ImageView
+            android:id="@+id/iv_speak_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/yunke_speak_dialog_mic_level_animation" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_speak_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@id/ll_speak_dialog"
+        android:src="@drawable/yunke_speak_dialog_close" />
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_play_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="com.yunke.player.ui.PlayVideoActivity">
+
+    <com.yunke.player.widget.media.IjkVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/yunke_view_play_video_status" />
+
+    <include layout="@layout/yunke_view_play_video_top_bar" />
+
+    <ImageView
+        android:id="@+id/iv_good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="48dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:src="@drawable/yunke_video_play_unlock"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/rl_bottombar"
+        layout="@layout/yunke_view_play_video_bottom_bar" />
+
+    <include layout="@layout/yunke_view_play_video_right_tool" />
+
+    <include layout="@layout/yunke_view_play_video_left_tool" />
+
+    <include layout="@layout/yunke_view_play_video_other_speaker" />
+
+    <include layout="@layout/yunke_view_play_video_tip_message_2" />
+
+    <include layout="@layout/yunke_view_play_video_tip_message_1" />
+
+    <FrameLayout
+        android:id="@+id/float_layer_center_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_and_notice_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottombar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/notice"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/yunke_notice" />
+
+        <FrameLayout
+            android:id="@+id/float_layer_chat_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/float_layer_chat_press_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/float_layer_play_video_more_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/no_conn_ws"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yunke_no_ws_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="@style/yunke_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="掉线了，重连中..."
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/yunke_view_play_video_thumbs" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/App.iml" filepath="$PROJECT_DIR$/App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-armv7a/ijkplayer-armv7a.iml" filepath="$PROJECT_DIR$/ijkplayer-armv7a/ijkplayer-armv7a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-exo/ijkplayer-exo.iml" filepath="$PROJECT_DIR$/ijkplayer-exo/ijkplayer-exo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" filepath="$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yunke_player/yunke_player.iml" filepath="$PROJECT_DIR$/yunke_player/yunke_player.iml" />
+    </modules>
+  </component>
+</project>

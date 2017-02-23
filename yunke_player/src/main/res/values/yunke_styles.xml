@@ -1,0 +1,160 @@
+<resources>
+
+    <!--<style name="yunke_AppBaseTheme" parent="yunke_Theme.AppCompat.Light"></style>-->
+
+    <!--<style name="yunke_AppTheme" parent="yunke_AppBaseTheme"></style>-->
+    <!-- Base application theme. -->
+    <style name="yunke_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:theme">@android:style/Theme.NoTitleBar.Fullscreen</item>
+    </style>
+
+    <style name="yunke_theme_transparent" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="yunke_theme_fullscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="yunke_confirm_dialog" parent="android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 自己想要的背景 -->
+        <item name="android:windowBackground">@drawable/yunke_rect_bg_transparent</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="yunke_loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/yunke_play_video_loading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <!-- 文本样式 -->
+    <style name="yunke_text_size_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="yunke_text_size_8_default" parent="yunke_text_size_default">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="yunke_text_size_9_default" parent="yunke_text_size_default">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="yunke_text_size_10_default" parent="yunke_text_size_default">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="yunke_text_size_11_default" parent="yunke_text_size_default">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="yunke_text_size_12_default" parent="yunke_text_size_default">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="yunke_text_size_13_default" parent="yunke_text_size_default">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="yunke_text_size_14_default" parent="yunke_text_size_default">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="yunke_text_size_15_default" parent="yunke_text_size_default">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="yunke_text_size_16_default" parent="yunke_text_size_default">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="yunke_text_size_17_default" parent="yunke_text_size_default">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="yunke_text_size_18_default" parent="yunke_text_size_default">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="yunke_text_size_19_default" parent="yunke_text_size_default">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="yunke_text_size_20_default" parent="yunke_text_size_default">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="yunke_text_size_9_white" parent="yunke_text_size_9_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_10_white" parent="yunke_text_size_10_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_11_white" parent="yunke_text_size_11_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_12_white" parent="yunke_text_size_12_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_13_white" parent="yunke_text_size_13_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_14_white" parent="yunke_text_size_14_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_15_white" parent="yunke_text_size_15_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_16_white" parent="yunke_text_size_16_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_18_white" parent="yunke_text_size_18_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_19_white" parent="yunke_text_size_19_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_text_size_20_white" parent="yunke_text_size_20_default">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="yunke_Widget.Design.AppBarLayout" parent="android:Widget">
+        <item name="elevation">0dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+</resources>

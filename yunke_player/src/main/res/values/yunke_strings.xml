@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- common toast -->
+    <string name="yunke_toast_move_internet_status">当前为2G/3G/4G网络</string>
+
+    <!-- 播放器界面 -->
+    <string name="yunke_tip_cannot_speak">报名课程后才可举手发言</string>
+    <string name="yunke_tip_no_speak">暂无发言权限</string>
+    <string name="yunke_tip_play_completed">老师已下课</string>
+    <string name="yunke_tip_try_see_course"><![CDATA[正在试看，报名后完整学习&nbsp;&nbsp;&nbsp;&nbsp;立即报名]]></string>
+    <string name="yunke_tip_confirm_exit_classroom">确定要离开教室吗</string>
+    <string name="yunke_tip_confirm_open_switch_move_internet_play">继续上课会消耗流量~</string>
+    <string name="yunke_jixu_shangke">继续上课</string>
+    <string name="yunke_make_sure">确定</string>
+    <string name="yunke_cancel">取消</string>
+    <string name="yunke_video_stay_here">留下</string>
+    <string name="yunke_video_exit">离开</string>
+    <string name="yunke_chat_hint">请输入聊天内容...</string>
+    <string name="yunke_chat_forbid_all_hint">老师对全体禁言</string>
+    <string name="yunke_chat_forbid_i_hint">老师已对你禁言</string>
+    <string name="yunke_video_loading_failed">播放失败，请重新加载</string>
+    <string name="yunke_video_first_loading">即将开始学习:</string>
+    <string name="yunke_loading">努力加载中…</string>
+
+    <string name="yunke_no_message">消息不能为空</string>
+    <string name="yunke_play_video_tip_change_play_line"><![CDATA[当前视频出现卡顿，<font color="#58E1F3">切换线路</font>&nbsp;试试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></string>
+    <string name="yunke_play_video_speak_request">举手中</string>
+    <string name="yunke_play_video_status_conversion_course">视频正在转码中...</string>
+    <string name="yunke_play_video_status_waiting_course_1">距离开课时间还有%1$d小时%2$d分钟</string>
+    <string name="yunke_play_video_status_waiting_course_2">距离开课时间还有%d分钟</string>
+    <string name="yunke_play_video_status_waiting_course_3">上课时间：%s</string>
+    <string name="yunke_play_video_status_hide_course">学习视频被隐藏，无法学习</string>
+    <string name="yunke_play_video_status_no_find_course">无法找到该学习视频</string>
+    <string name="yunke_play_video_status_error_class">你已报名该课程的其他班，请去报名班级学习</string>
+    <string name="yunke_group_chat_express_promt_normal">说点什么吧...</string>
+    <string name="yunke_group_chat_express_promt_allforbid">全体禁言中...</string>
+    <string name="yunke_group_chat_express_promt_iforbid">被禁言中....</string>
+    <string name="yunke_group_chat_express_promt_trail">请先报名课程</string>
+
+    <!-- student info -->
+    <string name="yunke_me">我</string>
+
+    <!--answer_card-->
+    <string name="yunke_commit">提交答案</string>
+    <string name="yunke_answer_commited">答案已提交</string>
+    <string name="yunke_answer_right">答对了</string>
+
+    <!-- speak dialog -->
+    <string name="yunke_speak_dialog_speaking">发言中...</string>
+
+</resources>

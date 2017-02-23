@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/biaoqing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yunke_group_chat_biaoqing_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_keyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yunke_group_chat_keyboard_selector"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <com.yunke.player.widget.MyEditText
+                android:id="@+id/shu_ru_kuang"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/yunke_input_bg"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/yunke_chat_hint"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="vertical"
+                android:textColor="#080808"
+                android:textColorHint="#9A9A9A"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/send_message"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/yunke_group_chat_send_bg_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/chat_face_container"
+        layout="@layout/yunke_chat_face_container"
+        android:visibility="gone" />
+
+</LinearLayout>

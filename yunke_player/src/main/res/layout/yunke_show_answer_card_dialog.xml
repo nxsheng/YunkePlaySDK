@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="256dp"
+    android:background="@drawable/yunke_ans_card_bg">
+
+    <FrameLayout
+        android:id="@+id/cancel"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_time"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/yunke_time" />
+
+    <Chronometer
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_commit"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/time"
+        android:textColor="#54371b"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/bt_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/yunke_submit"
+        android:gravity="center"
+        android:text="@string/yunke_commit"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/time"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#DADADA" />
+
+    <ListView
+        android:id="@+id/answer_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="7dp"
+        android:listSelector="#00000000"
+        android:paddingBottom="22dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/rl_answer_result"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_answer_dsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="47dp"
+                android:background="@drawable/yunke_answer_right_img" />
+
+            <TextView
+                android:id="@+id/tv_true_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:text="@string/yunke_answer_right"
+                android:textColor="#e1382e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_true_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:text="@string/yunke_answer_right"
+                android:textColor="#e1382e"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_all_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="这道题太难了，没有同学答对"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/yunke_answer_rank_left"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/yunke_answer_rank_right"
+                android:text="排行榜"
+                android:textColor="#978672"
+                android:textSize="10sp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_answer_dsc"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_rank_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_answer_dsc"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_rank_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="第1名"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/rank_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rank_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_rank_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="第2名"
+                        android:textColor="#978672"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/rank_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rank_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_marginRight="13sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_rank_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="第3名"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/rank_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rank_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_my_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/yunke_answer_rank_me"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/my_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#978672"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_rank_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="256dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_my_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="我的答案是：A"
+                android:textColor="#54371b"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="等待老师公布答案..."
+                android:textColor="#634229"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

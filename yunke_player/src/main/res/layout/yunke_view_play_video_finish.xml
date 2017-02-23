@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_play_video_finish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#083d32"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_finish_text"
+            style="@style/yunke_text_size_16_white"
+            android:text="第六章：ABC的应用" />
+
+        <LinearLayout
+            android:id="@+id/ll_finish_live_broadcast_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/yunke_rect_play_video_finish_tip_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rank"
+                    style="@style/yunke_text_size_16_white"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/yunke_text_size_12_default"
+                    android:layout_marginTop="10dp"
+                    android:text="本节排名"
+                    android:textColor="#CBCDCC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_good"
+                    style="@style/yunke_text_size_16_white"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/yunke_text_size_12_default"
+                    android:layout_marginTop="10dp"
+                    android:text="获赞"
+                    android:textColor="#CBCDCC" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_finish_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/yunke_video_play_btn_replay_selector"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

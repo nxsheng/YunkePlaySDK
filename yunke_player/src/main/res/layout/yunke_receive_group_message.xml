@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/yunke_rounded_rectangle_group_chat_bg"
+        >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:autoLink="web"
+            android:textColor="#f1da3e"
+            android:textSize="12sp"
+            android:text="小明：老西，则个题俺不会耶！"
+            />
+
+        <TextView
+            android:id="@+id/v_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/content"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:autoLink="web"
+            android:textColor="#f1da3e"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+        <View
+            android:id="@+id/cover"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_alignLeft="@id/v_content"
+            android:layout_alignRight="@id/v_content"
+            android:background="@drawable/yunke_rounded_rectangle_group_chat_cover"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <com.yunke.player.widget.RoundImageView
+        android:id="@+id/chat_head_portrait"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/yunke_default_cycle_avatar_icon" />
+
+</RelativeLayout>
+
+
+
+
+
+

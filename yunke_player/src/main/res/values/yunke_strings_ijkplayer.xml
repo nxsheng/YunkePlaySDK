@@ -1,0 +1,46 @@
+<resources>
+    <string name="yunke_N_A">N/A</string>
+    <string name="yunke_close">Close</string>
+    <string name="yunke_fps_output">fps (output)</string>
+    <string name="yunke_fps_decode">fps (decode)</string>
+
+    <string name="yunke_media_information">Media Information</string>
+    <string name="yunke_mi_player">Player</string>
+    <string name="yunke_mi_media">Media</string>
+    <string name="yunke_mi_profile_level">Profile level</string>
+    <string name="yunke_mi_pixel_format">Pixel format</string>
+    <string name="yunke_mi_resolution">Resolution</string>
+    <string name="yunke_mi_length">Length</string>
+    <string name="yunke_mi_stream_fmt1">Stream #%d</string>
+    <string name="yunke_mi_type">Type</string>
+    <string name="yunke_mi_language">Language</string>
+    <string name="yunke_mi_codec">Codec</string>
+    <string name="yunke_mi_frame_rate">Frame rate</string>
+    <string name="yunke_mi_bit_rate">Bit rate</string>
+    <string name="yunke_mi_sample_rate">Sample rate</string>
+    <string name="yunke_mi_channels">Channels</string>
+    <string name="yunke_mi__selected_video_track">*</string>
+    <string name="yunke_mi__selected_audio_track">*</string>
+
+    <string name="yunke_TrackType_video">Video</string>
+    <string name="yunke_TrackType_audio">Audio</string>
+    <string name="yunke_TrackType_subtitle">Subtitle</string>
+    <string name="yunke_TrackType_timedtext">Timed text</string>
+    <string name="yunke_TrackType_metadata">Meta data</string>
+    <string name="yunke_TrackType_unknown">Unknown</string>
+
+    <string name="yunke_VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="yunke_VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="yunke_VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="yunke_VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="yunke_VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="yunke_VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="yunke_VideoView_render_none">Render: None</string>
+    <string name="yunke_VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="yunke_VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="yunke_VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="yunke_VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="yunke_VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+</resources>

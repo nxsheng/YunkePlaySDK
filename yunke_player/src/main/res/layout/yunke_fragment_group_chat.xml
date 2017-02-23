@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="240dp">
+
+    <TextView
+        android:id="@+id/chat_promat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="当前内容 仅老师可见"
+        android:textColor="#f1da3e"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_promat"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ProgressBar
+			style="@style/yunke_loading"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/chat_press_ll"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		>
+
+		<LinearLayout
+			android:id="@+id/chat_press"
+			android:layout_width="wrap_content"
+			android:layout_height="28dp"
+			android:orientation="horizontal"
+			android:background="@drawable/yunke_group_chat_express_bg_selector"
+			android:gravity="center_vertical"
+			android:clickable="true"
+			android:visibility="visible">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="12dp"
+				android:src="@drawable/yunke_group_chat_speak"
+				/>
+
+			<TextView
+				android:id="@+id/chat_press_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:text="@string/yunke_group_chat_express_promt_normal"
+				android:textColor="#ffffff"
+				android:textSize="13sp" />
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/chat_disappear"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:src="@drawable/yunke_video_play_message_selector" />
+
+	</LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_above="@id/chat_press_ll"
+        android:layout_below="@id/chat_promat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_marginLeft="4dp"
+		android:layout_marginRight="4dp"
+		android:layout_marginBottom="8dp">
+
+	<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/chat_promat"
+	        android:layout_above="@id/chat_press"
+	        android:layout_marginTop="4dp"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginRight="10.0dip"
+	        android:gravity="bottom"
+	        >
+
+	        <android.support.v7.widget.RecyclerView
+	            android:id="@+id/chat_list"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:divider="#00000000"
+	            android:dividerHeight="10dp"
+	            android:listSelector="#00000000"
+	            android:scrollbars="none"
+	            android:transcriptMode="normal" />
+	    </RelativeLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/no_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_press_ll"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/yunke_rounded_rectangle_group_chat_no_message"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="还没有人说过话哟亲"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_chat_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_press_ll"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6sp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="24dp"
+            android:background="@drawable/yunke_group_chat_bubbles" />
+
+        <TextView
+            android:id="@+id/group_chat_new_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="3条新消息"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

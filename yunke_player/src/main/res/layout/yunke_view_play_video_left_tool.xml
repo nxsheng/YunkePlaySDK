@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_left_tool"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/rl_bottombar"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_answer_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yunke_video_answer_img"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_write_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/yunke_play_video_note"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_speak_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/yunke_video_speak_normal"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_speak_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/yunke_video_speak"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_speak_ing"
+            style="@style/yunke_text_size_9_white"
+            android:layout_below="@id/iv_speak_ing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-12dp"
+            android:gravity="center"
+            android:text="@string/yunke_play_video_speak_request"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

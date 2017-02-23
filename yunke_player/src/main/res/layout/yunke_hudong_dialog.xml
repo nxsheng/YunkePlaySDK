@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="256dp"
+    android:background="@drawable/yunke_ineractive_question_answer_bg"
+    android:clickable="true">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_cancel"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/yunke_answer_time_des" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/yunke_answer_time_bg"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/yunke_answer_time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/yunke_hu_dong_bg_selector"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="@drawable/yunke_hu_dong_bg_selector"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

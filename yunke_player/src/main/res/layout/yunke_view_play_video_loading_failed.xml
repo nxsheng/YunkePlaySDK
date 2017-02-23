@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_play_video_loading_failed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#083d32"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/yunke_video_play_return"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_loading_failed_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yunke_video_play_btn_reload_selector" />
+
+        <TextView
+            style="@style/yunke_text_size_16_white"
+            android:layout_marginTop="10dp"
+            android:text="@string/yunke_video_loading_failed" />
+    </LinearLayout>
+
+</RelativeLayout>
